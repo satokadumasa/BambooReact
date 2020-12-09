@@ -76,3 +76,21 @@
   border-bottom: 1px solid gray;
   border-right: 1px solid gray;
 }
+
+.list_outerline {
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+}
+.list_header {
+  background-color: black;
+  color: #fff;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.list_body {
+  background-color: #fff;
+  color: black;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
