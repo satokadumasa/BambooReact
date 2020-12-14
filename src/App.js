@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';
 import UsersIndex from './Users/Index';
+import UsersDetail from './Users/Detail';
 import BooksIndex from './Books/Index';
 import ConferencesIndex from './Conferences/Index';
 
@@ -16,10 +17,11 @@ function App() {
         <div>
           <Navbar /><hr/>
           <Route exact path='/' component={Home}/>
-          <Route path='/About' render={ () => <About name={'Tom'}/> }/>
-          <Route path='/Users/' render={ () => <UsersIndex name={'Tom'}/> }/>
-          <Route path='/Books/' render={ () => <BooksIndex name={'Tom'}/> }/>
-          <Route path='/Conferences/' render={ () => <ConferencesIndex name={'Tom'}/> }/>
+          <Route exact path='/About' component={About}/>
+          <Route exact path='/Users/' component={UsersIndex}/>
+          <Route exact path='/Users/:id/show' component={UsersDetail}/>
+          <Route exact path='/Books/' component={BooksIndex}/>
+          <Route exact path='/Conferences/' component={ConferencesIndex}/>
         </div>
       </Router>
     </div>

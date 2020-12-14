@@ -6,6 +6,10 @@ const middlewares = jsonServer.defaults();
 server.use(
     jsonServer.rewriter({
         "/api/users/": "/user_list",
+        "/api/users/1/show": "/user_1",
+        "/api/users/2/show": "/user_2",
+        "/api/users/3/show": "/user_3",
+        "/api/users/4/show": "/user_4",
         "/api/books/": "/book_list"
     })
 );

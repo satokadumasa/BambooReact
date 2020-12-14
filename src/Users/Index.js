@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 class Index extends React.Component {
   constructor(props) {
@@ -7,6 +8,7 @@ class Index extends React.Component {
       isLoaded: false,
       users: []
     };
+    this.openUser = this.openUser.bind(this);
   }
   componentDidMount() { //render直後に行いたい処理を書くところ
     fetch("http://localhost:3001/api/users/") //api
@@ -17,6 +19,10 @@ class Index extends React.Component {
           users: json.users
         });
       });
+  }
+  openUser(id) {
+    console.log('this is:', id);
+    this.props.history.push('/Users/' + id + '/show');
   }
   render(){
     var { users, isLoaded } = this.state;
@@ -47,16 +53,21 @@ class Index extends React.Component {
           {Object.keys(users).map(key => (
             <div className="row list_outerline" kye={key.toString}>
               <div className="col-1 col-sm-1 col-md-1 col-xl-1 list_body">
-                {users[key].id}
+                {users[key].user.id}
               </div>
               <div className="col-4 col-sm-4 col-md-4 col-xl-4 list_body">
-                {users[key].username}
+                {users[key].user.username}
               </div>
               <div className="col-4 col-sm-4 col-md-4 col-xl-4 list_body">
-                {users[key].email}
+                {users[key].user.email}
               </div>
-              <div className="col-3 col-sm-3 col-md-3 col-xl-3 list_body">
-                {users[key].created_at}
+              <div className="col-2 col-sm-2 col-md-2 col-xl-2 list_body">
+                {users[key].user.created_at}
+              </div>
+              <div className="col-1 col-sm-1 col-md-1 col-xl-1 list_body">
+                <button className="btn btn-primary" onClick={() => this.openUser(users[key].user.id) }>
+                  Detail
+                </button>
               </div>
             </div>
           ))}

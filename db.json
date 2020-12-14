@@ -1,41 +1,142 @@
 {
     "user_list": {
-        "result": "success",
-        "users": [
+      "result": "success",
+      "users": [
+        {
+          "user": 
           {
-              "id": 1,
-              "role_id": 1,
-              "username": "administrator",
-              "email": "admin@hesper.site",
-              "created_at": "2020-10-10 00:00:00",
-              "modified_at": "2020-10-10 00:00:00"
+            "id": 1,
+            "role_id": 1,
+            "username": "administrator",
+            "email": "admin@hesper.site",
+            "created_at": "2020-10-10 00:00:00",
+            "modified_at": "2020-10-10 00:00:00"
           },
+          "user_info":{
+            "id": 1,
+            "first_name": "Site",
+            "last_name": "Admoinistrator"
+          }
+        },
+        {
+          "user": 
           {
-              "id": 2,
-              "role_id": 1,
-              "username": "susanoo",
-              "email": "susanoo@hesper.site",
-              "created_at": "2020-10-10 00:00:00",
-              "modified_at": "2020-10-10 00:00:00"
+            "id": 2,
+            "role_id": 1,
+            "username": "user1",
+            "email": "user1@hesper.site",
+            "created_at": "2020-10-10 00:00:00",
+            "modified_at": "2020-10-10 00:00:00"
           },
+          "user_info":{
+            "id": 2,
+            "first_name": "satoshi",
+            "last_name": "Kato"
+          }
+        },
+        {
+          "user": 
           {
-              "id": 3,
-              "role_id": 1,
-              "username": "rainyrook",
-              "email": "rainyrook@hesper.site",
-              "created_at": "2020-10-10 00:00:00",
-              "modified_at": "2020-10-10 00:00:00"
+            "id": 3,
+            "role_id": 1,
+            "username": "user2",
+            "email": "user2@hesper.site",
+            "created_at": "2020-10-10 00:00:00",
+            "modified_at": "2020-10-10 00:00:00"
           },
+          "user_info":{
+            "id": 3,
+            "first_name": "Kanae",
+            "last_name": "Kocho"
+          }
+        },
+        {
+          "user": 
           {
-              "id": 4,
-              "role_id": 1,
-              "username": "rain",
-              "email": "rainyrook@hesper.site",
-              "created_at": "2020-10-10 00:00:00",
-              "modified_at": "2020-10-10 00:00:00"
-          }      ]
+            "id": 4,
+            "role_id": 1,
+            "username": "user3",
+            "email": "user3@hesper.site",
+            "created_at": "2020-10-10 00:00:00",
+            "modified_at": "2020-10-10 00:00:00"
+          },
+          "user_info":{
+            "id": 4,
+            "first_name": "Masatoshi",
+            "last_name": "Sato"
+          }
+        }
+      ]
     },
-    "book_list": {
+    "user_1":{
+      "result": "success",
+      "user": 
+      {
+        "id": 1,
+        "role_id": 1,
+        "username": "administrator",
+        "email": "admin@hesper.site",
+        "created_at": "2020-10-10 00:00:00",
+        "modified_at": "2020-10-10 00:00:00"
+      },
+      "user_info":{
+        "id": 1,
+        "first_name": "Site",
+        "last_name": "Admoinistrator"
+      }
+    },
+    "user_2":{
+      "result": "success",
+      "user": 
+      {
+        "id": 2,
+        "role_id": 1,
+        "username": "administrator",
+        "email": "admin@hesper.site",
+        "created_at": "2020-10-10 00:00:00",
+        "modified_at": "2020-10-10 00:00:00"
+      },
+      "user_info":{
+        "id": 2,
+        "first_name": "satoshi",
+        "last_name": "Kato"
+      }
+    },
+    "user_3":{
+      "result": "success",
+      "user": 
+      {
+        "id": 3,
+        "role_id": 1,
+        "username": "administrator",
+        "email": "admin@hesper.site",
+        "created_at": "2020-10-10 00:00:00",
+        "modified_at": "2020-10-10 00:00:00"
+      },
+      "user_info":{
+        "id": 3,
+        "first_name": "Kanae",
+        "last_name": "Kocho"
+      }
+    },
+    "user_4":{
+      "result": "success",
+      "user": 
+      {
+        "id": 4,
+        "role_id": 1,
+        "username": "administrator",
+        "email": "admin@hesper.site",
+        "created_at": "2020-10-10 00:00:00",
+        "modified_at": "2020-10-10 00:00:00"
+      },
+      "user_info":{
+        "id": 4,
+        "first_name": "Masatoshi",
+        "last_name": "Sato"
+      }
+    },
+   "book_list": {
       "result": "success",
       "books": [
         {
