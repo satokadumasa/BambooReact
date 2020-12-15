@@ -12,11 +12,17 @@ class Index extends React.Component {
     fetch("http://localhost:3001/api/books/") //api
       .then(res => res.json()) 
       .then(json => {
+        console.log(json);
         this.setState({
           isLoaded: true,
           books: json.books
         });
       });
+  }
+  openBook(id) {
+    console.log('BookIndex.openBook() id:', id);
+    this.props.history.push('/Books/' + id + '/show');
+    console.log('BookIndex.openBook() CH-01');
   }
   render(){
     var { books, isLoaded } = this.state;
@@ -57,6 +63,11 @@ class Index extends React.Component {
               </div>
               <div className="col-3 col-sm-3 col-md-3 col-xl-3 list_body">
                 {books[key].book.created_at}
+              </div>
+              <div className="col-1 col-sm-1 col-md-1 col-xl-1 list_body">
+                <button className="btn btn-primary" onClick={() => this.openBook(books[key].book.id) }>
+                  Detail
+                </button>
               </div>
             </div>
           ))}

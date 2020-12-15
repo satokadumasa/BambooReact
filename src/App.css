@@ -94,3 +94,7 @@
   border-bottom: 1px solid gray;
   border-right: 1px solid gray;
 }
+
+.document_body {
+  word-wrap: normal;
+}

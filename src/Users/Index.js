@@ -21,8 +21,9 @@ class Index extends React.Component {
       });
   }
   openUser(id) {
-    console.log('this is:', id);
+    console.log('UsersIndex.openUser() id:', id);
     this.props.history.push('/Users/' + id + '/show');
+    console.log('UsersIndex.openUser() CH-01:');
   }
   render(){
     var { users, isLoaded } = this.state;

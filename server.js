@@ -10,7 +10,21 @@ server.use(
         "/api/users/2/show": "/user_2",
         "/api/users/3/show": "/user_3",
         "/api/users/4/show": "/user_4",
-        "/api/books/": "/book_list"
+        "/api/books/": "/book_list",
+        "/api/books/1/show": "/book_1",
+        "/api/books/2/show": "/book_2",
+        "/api/books/3/show": "/book_3",
+        "/api/books/4/show": "/book_4",
+        "/api/books/5/show": "/book_5",
+        "/api/confarences/": "/confarences_list",
+        "/api/confarences/1/show": "/confarence_1",
+        "/api/confarences/2/show": "/confarence_2",
+        "/api/confarences/3/show": "/confarence_3",
+        "/api/confarences/4/show": "/confarence_4",
+        "/api/confarences/5/show": "/confarence_5",
+        "/api/confarences/6/show": "/confarence_6",
+        "/api/confarences/7/show": "/confarence_7",
+        "/api/confarences/8/show": "/confarence_8"
     })
 );
 
